@@ -29,19 +29,31 @@
 3. Bilinear Interpolation
 
 ## Lab02
+1. filtering & Sobel Operator
+2. Histogram Equalization
+3. Otsu threshold
 
 ## Lab03
+1. GrabCut Algorithm
+2. Background subtraction, Threshold, Connected component
 
 ## Lab04
+1. Camera Calibration
+2. Warping practice
 
 ## Lab05
+1. Marker(Distance Measuring) & Tello EDU
 
 ## Lab06
+1. UAV Manual Controlling
+2. UAV Auto Tracking
 
 ## Lab07
-
+1. 
 ## Lab08
 
 ## Lab09
+1. Object Detection with YOLOv7
 
 ## Lab10
+1. Line Tracking
