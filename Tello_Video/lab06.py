@@ -53,6 +53,7 @@ def main():
     
     while drone.is_flying:
         frame = frame_read.frame
+        frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
 
         frame, rvec, tvec, marker_ids = drone.detect_markers(frame, intrinsic, distortion, dictionary, parameters)
         if rvec is None or tvec is None or len(marker_ids) == 0:
