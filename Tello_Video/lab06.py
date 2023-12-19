@@ -13,7 +13,7 @@ MIN_SPEED = -30
 
 
 def detect_markers(frame, intrinsic, distortion, dictionary, parameters):
-    markerCorners, markerIds, _ = cv2.aruco.detectMarkers(frame, dictionary, parameters)
+    markerCorners, markerIds, _ = cv2.aruco.detectMarkers(frame, dictionary, parameters=parameters)
     frame = cv2.aruco.drawDetectedMarkers(frame, markerCorners, markerIds)
     rvec, tvec, _ = cv2.aruco.estimatePoseSingleMarkers(markerCorners, 15, intrinsic, distortion)
     if rvec is not None or tvec is not None: 
@@ -71,7 +71,7 @@ def main():
         z_update = tvec[0, 0, 2] - 100
         z_update = z_pid.update(z_update, sleep=0)
         z_update = max(min(z_update, MAX_SPEED), MIN_SPEED)
-        yaw_update = math.atan2(res[0], res[2]) * 25
+        yaw_update = math.atan2(res[0], res[2]) * 5
         yaw_update = yaw_pid.update(yaw_update, sleep=0)
         yaw_update = max(min(yaw_update, MAX_SPEED), MIN_SPEED)
         drone.send_rc_control(int(x_update), int(z_update), int(y_update * 1.5), int(-yaw_update))
