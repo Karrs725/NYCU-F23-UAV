@@ -18,6 +18,7 @@ def main():
     parameters = cv2.aruco.DetectorParameters_create()
     while True:
         frame = frame_read.frame
+        frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
 
         markerCorners, markerIds, rejectedCandidates = cv2.aruco.detectMarkers(frame, dictionary, parameters=parameters)
         frame = cv2.aruco.drawDetectedMarkers(frame, markerCorners, markerIds)
