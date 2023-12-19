@@ -23,6 +23,7 @@ def main():
 
     while len(img_points) < 15:
         frame = frame_read.frame
+        frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
         gray_frame = cv2.cvtColor(frame, cv2.COLOR_RGB2GRAY)
         ret2, corner = cv2.findChessboardCorners(gray_frame, (9, 6), None)
         if ret2:
