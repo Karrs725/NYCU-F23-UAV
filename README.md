@@ -1,11 +1,8 @@
 # NYCU-UAV23
 
-### Course Info
-課程名稱 Course Name：無人機自動飛航與電腦視覺概論 Computer Vision for UAV Autopilot
-
-授課教師 Lecturer：陳冠文
-
-授課時間 Semester：112-1 2023 Fall
+- 課程名稱 Course Name：無人機自動飛航與電腦視覺概論 Computer Vision for UAV Autopilot
+- 授課教師 Lecturer：陳冠文
+- 授課時間 Semester：112-1 2023 Fall
 
 ---
 
