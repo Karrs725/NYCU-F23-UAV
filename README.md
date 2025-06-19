@@ -1,4 +1,4 @@
-# NYCU-UAV23
+# NYCU-F23-UAV
 
 - 課程名稱 Course Name：無人機自動飛航與電腦視覺概論 Computer Vision for UAV Autopilot
 - 授課教師 Lecturer：陳冠文
